@@ -1,0 +1,28 @@
+.phoneBTN-white {
+    @include styleButton( $pd-3 + 0.5, $pd-4, transparent, 2px solid $color-blue-2);
+    @include styleText($fs-1, $fw-2, $color-blue-2);
+    &:hover {
+        @include styleButtonHover($color-blue-2, none, $color-white-3);
+        transition: all 0.5s;
+    }
+}
+
+.phoneBTN-blue {
+    letter-spacing: 0.03rem;
+    @include styleButton( $pd-3 + 2.5, $pd-4 + 2, linear-gradient(120deg, #60a4f4, #2a73dd), none);
+    @include styleText($fs-1, $fw-2, $color-white-3);
+    &:hover {
+        opacity: 0.75;
+        transition: all 0.3s;
+    }
+}
+
+.BTN-byNow {
+    @include styleButton($pd-6, $pd-1, $color-white-3, none);
+    @include styleText($fs-1, $fw-2, $color-blue-2);
+    &:hover {
+        opacity: 0.75;
+        color: $bg-color;
+        transition: all 0.3s;
+    }
+}
