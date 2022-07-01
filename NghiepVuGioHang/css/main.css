@@ -1,0 +1,144 @@
+/* No CSS */
+
+
+/*# sourceMappingURL=main.css.map */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html,
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #656774;
+    background-color: #f5f9fe;
+}
+
+.phoneBTN-white {
+    padding: 13.5px 44px;
+    background: transparent;
+    border: 2px solid #2a73dd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2a73dd;
+}
+
+.phoneBTN-white:hover {
+    background: #2a73dd;
+    border-color: none;
+    color: #fff;
+    transition: all .5s;
+}
+
+.phoneBTN-blue {
+    letter-spacing: 0.03rem;
+    padding: 15.5px 46px;
+    background: linear-gradient(120deg, #60a4f4, #2a73dd);
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.phoneBTN-blue:hover {
+    opacity: 0.75;
+    transition: all .3s;
+}
+
+header {
+    background-color: #f5f9fe;
+    box-shadow: 0 2px 4px #e2ebfc;
+    position: fixed;
+    padding: 25px;
+    width: 100%;
+    z-index: 10;
+}
+
+header .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2a73dd;
+}
+
+header .nav-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1d365e;
+    transition: all 0.3s;
+}
+
+header .nav-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #2a73dd;
+    transform: scaleX(0);
+    transition: all 0.3s;
+}
+
+header .nav-link:hover {
+    color: #2a73dd;
+}
+
+header .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+header .active .nav-link {
+    color: #2a73dd;
+}
+
+header .active .nav-link::after {
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 992px) {
+    header .navbar-toggler {
+        background-color: #2a73dd;
+        text-align: center;
+    }
+    header .navbar-toggler .navbar-toggler-icon {
+        color: #fff;
+        display: grid;
+        place-items: center;
+    }
+    header .nav-link {
+        text-align: center;
+    }
+}
+
+.phoneCarousel {
+    background-image: url(../img/product-header-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 225px 0;
+}
+
+.products .cardPhone {
+    box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+    background-color: #f5f9fe;
+    border: none;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.products .cardPhone .card__img {
+    box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.products .cardPhone {
+    box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+    background-color: #f5f9fe;
+    border: none;
+    padding: 30px;
+    margin-bottom: 30px;
+}
